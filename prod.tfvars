@@ -21,7 +21,7 @@ stop_schedule  = "cron(15 9 * * ? *)"
 
 # Application Repository Configuration
 # This is the Git URL for your Spring Boot application's source code.
-repo_url       = "git@github.com:PRASADD65/SpringApp.git" << Private Repo >>
+repo_url       = "git@github.com:PRASADD65/SpringApp.git"  # Private Repo
 
 # Enter the email address for sns subscription
 alert_email = "your_email_id@gmail.com"
