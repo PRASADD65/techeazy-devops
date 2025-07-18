@@ -110,4 +110,6 @@ sudo python3 /root/log_parser.py
 
 - It will show: ✅ SNS publish succeeded
 - An email notification on your registered email.
-- Grafana with error count and workflow runtime  with stage based. 
+- Grafana with error count and workflow runtime  with stage based.
+
+Thank You. 
