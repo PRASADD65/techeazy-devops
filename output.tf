@@ -17,3 +17,5 @@ output "prometheus_url" {
   description = "Prometheus Web UI URL"
   value       = "http://${aws_instance.github_runner.public_ip}:9090"
 }
+
+

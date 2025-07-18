@@ -12,7 +12,7 @@
 ~h
 # Command Line History (newest to oldest):
 :wq
-|2,0,1752862748,,"wq"
+|2,0,1752864242,,"wq"
 
 # Search String History (newest to oldest):
 
@@ -25,16 +25,301 @@
 # Registers:
 
 # File marks:
-'0  115  9  ~/README.md
-|4,48,115,9,1752862748,"~/README.md"
+'0  6  0  ~/variable.tf
+|4,48,6,0,1752864242,"~/variable.tf"
+'1  7  38  ~/terraform.tfvars
+|4,49,7,38,1752864224,"~/terraform.tfvars"
+'2  5  0  ~/sns.tf
+|4,50,5,0,1752864169,"~/sns.tf"
+'3  16  0  ~/sg.tf
+|4,51,16,0,1752864150,"~/sg.tf"
+'4  10  0  ~/provider.tf
+|4,52,10,0,1752864130,"~/provider.tf"
+'5  21  0  ~/output.tf
+|4,53,21,0,1752864111,"~/output.tf"
+'6  70  0  ~/iam.tf
+|4,54,70,0,1752864091,"~/iam.tf"
+'7  6  31  ~/ec2config.sh
+|4,55,6,31,1752864069,"~/ec2config.sh"
+'8  44  0  ~/ec2.tf
+|4,56,44,0,1752864045,"~/ec2.tf"
+'9  9  0  ~/backend.tf
+|4,57,9,0,1752864020,"~/backend.tf"
 
 # Jumplist (newest first):
--'  115  9  ~/README.md
-|4,39,115,9,1752862748,"~/README.md"
--'  1  0  ~/README.md
-|4,39,1,0,1752862715,"~/README.md"
+-'  6  0  ~/variable.tf
+|4,39,6,0,1752864242,"~/variable.tf"
+-'  1  0  ~/variable.tf
+|4,39,1,0,1752864232,"~/variable.tf"
+-'  7  38  ~/terraform.tfvars
+|4,39,7,38,1752864224,"~/terraform.tfvars"
+-'  7  38  ~/terraform.tfvars
+|4,39,7,38,1752864224,"~/terraform.tfvars"
+-'  1  0  ~/terraform.tfvars
+|4,39,1,0,1752864181,"~/terraform.tfvars"
+-'  1  0  ~/terraform.tfvars
+|4,39,1,0,1752864181,"~/terraform.tfvars"
+-'  5  0  ~/sns.tf
+|4,39,5,0,1752864169,"~/sns.tf"
+-'  5  0  ~/sns.tf
+|4,39,5,0,1752864169,"~/sns.tf"
+-'  5  0  ~/sns.tf
+|4,39,5,0,1752864169,"~/sns.tf"
+-'  5  0  ~/sns.tf
+|4,39,5,0,1752864169,"~/sns.tf"
+-'  1  0  ~/sns.tf
+|4,39,1,0,1752864163,"~/sns.tf"
+-'  1  0  ~/sns.tf
+|4,39,1,0,1752864163,"~/sns.tf"
+-'  1  0  ~/sns.tf
+|4,39,1,0,1752864163,"~/sns.tf"
+-'  1  0  ~/sns.tf
+|4,39,1,0,1752864163,"~/sns.tf"
+-'  16  0  ~/sg.tf
+|4,39,16,0,1752864150,"~/sg.tf"
+-'  16  0  ~/sg.tf
+|4,39,16,0,1752864150,"~/sg.tf"
+-'  16  0  ~/sg.tf
+|4,39,16,0,1752864150,"~/sg.tf"
+-'  16  0  ~/sg.tf
+|4,39,16,0,1752864150,"~/sg.tf"
+-'  16  0  ~/sg.tf
+|4,39,16,0,1752864150,"~/sg.tf"
+-'  16  0  ~/sg.tf
+|4,39,16,0,1752864150,"~/sg.tf"
+-'  16  0  ~/sg.tf
+|4,39,16,0,1752864150,"~/sg.tf"
+-'  16  0  ~/sg.tf
+|4,39,16,0,1752864150,"~/sg.tf"
+-'  1  0  ~/sg.tf
+|4,39,1,0,1752864140,"~/sg.tf"
+-'  1  0  ~/sg.tf
+|4,39,1,0,1752864140,"~/sg.tf"
+-'  1  0  ~/sg.tf
+|4,39,1,0,1752864140,"~/sg.tf"
+-'  1  0  ~/sg.tf
+|4,39,1,0,1752864140,"~/sg.tf"
+-'  1  0  ~/sg.tf
+|4,39,1,0,1752864140,"~/sg.tf"
+-'  1  0  ~/sg.tf
+|4,39,1,0,1752864140,"~/sg.tf"
+-'  1  0  ~/sg.tf
+|4,39,1,0,1752864140,"~/sg.tf"
+-'  1  0  ~/sg.tf
+|4,39,1,0,1752864140,"~/sg.tf"
+-'  10  0  ~/provider.tf
+|4,39,10,0,1752864130,"~/provider.tf"
+-'  10  0  ~/provider.tf
+|4,39,10,0,1752864130,"~/provider.tf"
+-'  10  0  ~/provider.tf
+|4,39,10,0,1752864130,"~/provider.tf"
+-'  10  0  ~/provider.tf
+|4,39,10,0,1752864130,"~/provider.tf"
+-'  10  0  ~/provider.tf
+|4,39,10,0,1752864130,"~/provider.tf"
+-'  10  0  ~/provider.tf
+|4,39,10,0,1752864130,"~/provider.tf"
+-'  10  0  ~/provider.tf
+|4,39,10,0,1752864130,"~/provider.tf"
+-'  10  0  ~/provider.tf
+|4,39,10,0,1752864130,"~/provider.tf"
+-'  10  0  ~/provider.tf
+|4,39,10,0,1752864130,"~/provider.tf"
+-'  10  0  ~/provider.tf
+|4,39,10,0,1752864130,"~/provider.tf"
+-'  10  0  ~/provider.tf
+|4,39,10,0,1752864130,"~/provider.tf"
+-'  10  0  ~/provider.tf
+|4,39,10,0,1752864130,"~/provider.tf"
+-'  10  0  ~/provider.tf
+|4,39,10,0,1752864130,"~/provider.tf"
+-'  10  0  ~/provider.tf
+|4,39,10,0,1752864130,"~/provider.tf"
+-'  10  0  ~/provider.tf
+|4,39,10,0,1752864130,"~/provider.tf"
+-'  10  0  ~/provider.tf
+|4,39,10,0,1752864130,"~/provider.tf"
+-'  1  0  ~/provider.tf
+|4,39,1,0,1752864121,"~/provider.tf"
+-'  1  0  ~/provider.tf
+|4,39,1,0,1752864121,"~/provider.tf"
+-'  1  0  ~/provider.tf
+|4,39,1,0,1752864121,"~/provider.tf"
+-'  1  0  ~/provider.tf
+|4,39,1,0,1752864121,"~/provider.tf"
+-'  1  0  ~/provider.tf
+|4,39,1,0,1752864121,"~/provider.tf"
+-'  1  0  ~/provider.tf
+|4,39,1,0,1752864121,"~/provider.tf"
+-'  1  0  ~/provider.tf
+|4,39,1,0,1752864121,"~/provider.tf"
+-'  1  0  ~/provider.tf
+|4,39,1,0,1752864121,"~/provider.tf"
+-'  1  0  ~/provider.tf
+|4,39,1,0,1752864121,"~/provider.tf"
+-'  1  0  ~/provider.tf
+|4,39,1,0,1752864121,"~/provider.tf"
+-'  1  0  ~/provider.tf
+|4,39,1,0,1752864121,"~/provider.tf"
+-'  1  0  ~/provider.tf
+|4,39,1,0,1752864121,"~/provider.tf"
+-'  1  0  ~/provider.tf
+|4,39,1,0,1752864121,"~/provider.tf"
+-'  1  0  ~/provider.tf
+|4,39,1,0,1752864121,"~/provider.tf"
+-'  1  0  ~/provider.tf
+|4,39,1,0,1752864121,"~/provider.tf"
+-'  1  0  ~/provider.tf
+|4,39,1,0,1752864121,"~/provider.tf"
+-'  21  0  ~/output.tf
+|4,39,21,0,1752864111,"~/output.tf"
+-'  21  0  ~/output.tf
+|4,39,21,0,1752864111,"~/output.tf"
+-'  21  0  ~/output.tf
+|4,39,21,0,1752864111,"~/output.tf"
+-'  21  0  ~/output.tf
+|4,39,21,0,1752864111,"~/output.tf"
+-'  21  0  ~/output.tf
+|4,39,21,0,1752864111,"~/output.tf"
+-'  21  0  ~/output.tf
+|4,39,21,0,1752864111,"~/output.tf"
+-'  21  0  ~/output.tf
+|4,39,21,0,1752864111,"~/output.tf"
+-'  21  0  ~/output.tf
+|4,39,21,0,1752864111,"~/output.tf"
+-'  21  0  ~/output.tf
+|4,39,21,0,1752864111,"~/output.tf"
+-'  21  0  ~/output.tf
+|4,39,21,0,1752864111,"~/output.tf"
+-'  21  0  ~/output.tf
+|4,39,21,0,1752864111,"~/output.tf"
+-'  21  0  ~/output.tf
+|4,39,21,0,1752864111,"~/output.tf"
+-'  21  0  ~/output.tf
+|4,39,21,0,1752864111,"~/output.tf"
+-'  21  0  ~/output.tf
+|4,39,21,0,1752864111,"~/output.tf"
+-'  21  0  ~/output.tf
+|4,39,21,0,1752864111,"~/output.tf"
+-'  21  0  ~/output.tf
+|4,39,21,0,1752864111,"~/output.tf"
+-'  21  0  ~/output.tf
+|4,39,21,0,1752864111,"~/output.tf"
+-'  21  0  ~/output.tf
+|4,39,21,0,1752864111,"~/output.tf"
+-'  21  0  ~/output.tf
+|4,39,21,0,1752864111,"~/output.tf"
+-'  21  0  ~/output.tf
+|4,39,21,0,1752864111,"~/output.tf"
+-'  21  0  ~/output.tf
+|4,39,21,0,1752864111,"~/output.tf"
+-'  21  0  ~/output.tf
+|4,39,21,0,1752864111,"~/output.tf"
+-'  21  0  ~/output.tf
+|4,39,21,0,1752864111,"~/output.tf"
+-'  21  0  ~/output.tf
+|4,39,21,0,1752864111,"~/output.tf"
+-'  21  0  ~/output.tf
+|4,39,21,0,1752864111,"~/output.tf"
+-'  21  0  ~/output.tf
+|4,39,21,0,1752864111,"~/output.tf"
+-'  21  0  ~/output.tf
+|4,39,21,0,1752864111,"~/output.tf"
+-'  21  0  ~/output.tf
+|4,39,21,0,1752864111,"~/output.tf"
+-'  21  0  ~/output.tf
+|4,39,21,0,1752864111,"~/output.tf"
+-'  21  0  ~/output.tf
+|4,39,21,0,1752864111,"~/output.tf"
+-'  21  0  ~/output.tf
+|4,39,21,0,1752864111,"~/output.tf"
+-'  21  0  ~/output.tf
+|4,39,21,0,1752864111,"~/output.tf"
+-'  1  0  ~/output.tf
+|4,39,1,0,1752864098,"~/output.tf"
+-'  1  0  ~/output.tf
+|4,39,1,0,1752864098,"~/output.tf"
+-'  1  0  ~/output.tf
+|4,39,1,0,1752864098,"~/output.tf"
+-'  1  0  ~/output.tf
+|4,39,1,0,1752864098,"~/output.tf"
+-'  1  0  ~/output.tf
+|4,39,1,0,1752864098,"~/output.tf"
+-'  1  0  ~/output.tf
+|4,39,1,0,1752864098,"~/output.tf"
 
 # History of marks within files (newest to oldest):
+
+> ~/variable.tf
+	*	1752864240	0
+	"	6	0
+	^	6	0
+	.	5	0
+	+	5	0
+
+> ~/terraform.tfvars
+	*	1752864222	0
+	"	7	38
+	^	7	39
+	.	7	38
+	+	7	38
+
+> ~/sns.tf
+	*	1752864167	0
+	"	5	0
+	^	5	0
+	.	4	0
+	+	4	0
+
+> ~/sg.tf
+	*	1752864149	0
+	"	16	0
+	^	16	0
+	.	15	0
+	+	15	0
+
+> ~/provider.tf
+	*	1752864129	0
+	"	10	0
+	^	10	0
+	.	9	0
+	+	9	0
+
+> ~/output.tf
+	*	1752864109	0
+	"	21	0
+	^	21	0
+	.	20	0
+	+	20	0
+
+> ~/iam.tf
+	*	1752864090	0
+	"	70	0
+	^	70	0
+	.	69	0
+	+	69	0
+
+> ~/ec2config.sh
+	*	1752864067	0
+	"	6	31
+	^	6	32
+	.	6	32
+	+	4	32
+	+	6	32
+
+> ~/ec2.tf
+	*	1752864043	0
+	"	44	0
+	^	44	0
+	.	43	0
+	+	43	0
+
+> ~/backend.tf
+	*	1752864016	0
+	"	9	0
+	^	9	0
+	.	8	1
+	+	8	1
 
 > ~/README.md
 	*	1752862747	0

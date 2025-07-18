@@ -40,3 +40,5 @@ user_data = templatefile("${path.module}/ec2config.sh", {
   # If you ever have dependencies (like IAM resources), add them here:
   # depends_on = [aws_iam_instance_profile.example]
 }
+
+

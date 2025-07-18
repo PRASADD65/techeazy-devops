@@ -2,6 +2,7 @@ resource "aws_sns_topic" "cicd_failure_alerts" {
   name = "cicd-failure-alerts"
 }
 
+
 resource "aws_sns_topic_subscription" "email_subscriber" {
   topic_arn = aws_sns_topic.cicd_failure_alerts.arn
   protocol  = "email"

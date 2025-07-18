@@ -1,9 +1,9 @@
 #!/bin/bash
 set -e
 
-# -------------------------------
+# ------------------------------
 # Install dependencies
-# -------------------------------
+# ------------------------------
 apt update && apt install -y curl jq git python3 python3-pip unzip tar wget docker.io
 curl -fsSL https://deb.nodesource.com/setup_18.x | bash -
 apt install -y nodejs

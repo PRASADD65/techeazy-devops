@@ -13,6 +13,7 @@ resource "aws_security_group" "github_runner" {
     description = "SSH"
   }
 
+
   # Prometheus (9090)
   ingress {
     from_port   = 9090
