@@ -1,0 +1,91 @@
+name: Destroy AWS Infrastructure with Terraform
+
+on:
+  workflow_dispatch:
+    inputs:
+      stage:
+        description: 'Select Deployment Stage (dev or prod)'
+        required: true
+        type: choice
+        options:
+          - dev
+          - prod
+
+env:
+  TERRAFORM_VERSION: "1.7.5"
+  AWS_REGION: "ap-south-2"
+  AWS_SDK_LOAD_CONFIG: "1"
+  S3_BACKEND_BUCKET_NAME: "terraform-state-buckettt"
+
+jobs:
+  destroy_infrastructure:
+    runs-on: [self-hosted, ubuntu, ec2]
+    permissions:
+      contents: read
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Build Lambda Deployment Packages
+        # The build_lambda_zips.sh script is now in the userscripts directory
+        run: chmod +x userscripts/build_lambda_zips.sh && ./userscripts/build_lambda_zips.sh
+        # The working directory should remain the root of the repo for this command
+        working-directory: ./
+        continue-on-error: true
+
+      - name: Verify Lambda Zips After Build (Optional)
+        # Zips are now created in the Terraform directory
+        run: ls -l Terraform/*.zip || true
+        working-directory: ./
+
+      - name: Setup Terraform CLI
+        uses: hashicorp/setup-terraform@v3
+        with:
+          terraform_version: ${{ env.TERRAFORM_VERSION }}
+
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ env.AWS_REGION }}
+
+      - name: Determine Deployment Stage and Select/Create Terraform Workspace
+        id: set_stage_and_workspace
+        # This step now needs to operate from within the Terraform directory
+        run: |
+          STAGE="${{ github.event.inputs.stage }}"
+          echo "STAGE=$STAGE" >> $GITHUB_ENV
+
+          terraform init \
+            -backend-config="bucket=${{ env.S3_BACKEND_BUCKET_NAME }}" \
+            -backend-config="region=${{ env.AWS_REGION }}" \
+            -backend-config="key=terraform/${STAGE}/terraform.tfstate"
+
+          if terraform workspace list | grep -q " ${STAGE}$"; then
+            terraform workspace select "$STAGE"
+          else
+            terraform workspace new "$STAGE"
+          fi
+        # All subsequent terraform commands will be run from the Terraform directory
+        working-directory: ./Terraform
+
+      - name: Terraform Validate
+        run: terraform validate
+        working-directory: ./Terraform # Ensure this is explicitly set for clarity
+
+      - name: Terraform Plan Destroy
+        env:
+          EC2_SSH_PRIVATE_KEY: ${{ secrets.EC2_SSH_PRIVATE_KEY }}
+        # Reference TFVARS_FILE which is now a relative path from Terraform directory
+        run: terraform plan -destroy -out=tfplan -var-file=../configs/${{ env.STAGE }}.tfvars -var="ec2_ssh_private_key=${EC2_SSH_PRIVATE_KEY}"
+        working-directory: ./Terraform # Ensure this is explicitly set for clarity
+
+      - name: Terraform Apply Destroy
+        env:
+          EC2_SSH_PRIVATE_KEY: ${{ secrets.EC2_SSH_PRIVATE_KEY }}
+        run: terraform apply -auto-approve tfplan
+        working-directory: ./Terraform # Ensure this is explicitly set for clarity
+       
